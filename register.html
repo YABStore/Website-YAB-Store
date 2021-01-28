@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+        <!-- Title -->
+        <title>DAFTAR Website YAB Store</title>
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Admin Dashboard Template" />
+        <meta name="keywords" content="admin,dashboard" />
+        <meta name="author" content="Steelcoders" />
+        
+        <!-- Styles -->
+       
+        <link href="new2/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="new1/font-awesome.css" rel="stylesheet" type="text/css"/>
+        
+        
+        <script src="new3/modernizr.js"></script>
+        <script src="new3/snap.svg-min.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            label{
+                color:#620759;
+            }
+             input , button{
+                border-radius: 5px !important;
+                height: 40px !important;
+            }
+            body {
+                background: url("log.png") no-repeat fixed center;
+            }
+        </style>
+       
+    </head>
+
+<div class="container" >
+    <div class="row">
+    <div class="col-md-4"></div>
+        <div class="col-md-4" style="background-color: transparent; border-radius: 12px;" >
+
+<br><h1 align="left" style="color: white;"><b>Buat Akun</b></h1><br>
+  <form role="form"  onsubmit="return GEEKFORGEEKS()" name="RegForm" >
+  <div class="form-group">
+    <label for="Nama Depan" style="color: red" id="Depan"></label>
+    <input type="text" class="form-control" id="email" placeholder="Nama depan" name="Nama Depan">
+  </div>
+
+  <div class="form-group">
+    <label for="Nama Belakang" style="color: red" id="Belakang"></label>
+    <input type="text" class="form-control" id="pwd" placeholder="Nama belakang" name="Nama Belakang">
+  </div>
+
+   <div class="form-group">
+    <label for="first name" style="color: red" id="demo"></label>
+        <label for="first name" style="color: red" id="demos"></label>
+            <label for="first name" style="color: red" id="demoss"></label>
+
+    <input type="email" class="form-control"  placeholder="Email" name="Email" required="">
+  </div>
+
+   <div class="form-group">
+    <label for="first name" style="color: red" id="pass"></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Kata Sandi" name="Kata Sandi">
+  </div>
+
+   <div class="form-group">
+    <label for="first name" style="color: red" id="firm"></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Konfirmasi Kata Sandi" name="Konfirmasi Kata Sandi">
+  </div>
+  <br>
+
+  <button type="submit" class="btn btn- form-control" style="background-color: white;color: black"><b><a href="login.html">Daftar</a></b></button><br><br><hr>
+ <h5 align="center" style="color: white"> Sudah mempunyai akun?<a href="login.html"> Login disini</a></h5>
+
+
+</form>
+    
+        </div>
+           <div class="col-md-4"></div>
+ 
+
+
+    </div>
+</div>
+
+
+
+       
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/js/modern.min.js"></script>
+
+
+        <script> 
+function GEEKFORGEEKS()                                    
+{ 
+    var nama = document.forms["RegForm"]["nama depan"];               
+    var nama belakang = document.forms["RegForm"]["nama belakang"];    
+    var email = document.forms["RegForm"]["email"];  
+    var kata sandi =  document.forms["RegForm"]["kata sandi"];  
+    var konfirmasi = document.forms["RegForm"]["konfirmasi"];  
+
+  
+    if (name.value == "")                                  
+    { 
+      document.getElementById("depan").innerHTML = "Masukkan nama depan";
+         
+        nama depan.focus(); 
+        return false; 
+    } 
+   
+    if (lastname.value == "")                               
+    { 
+      document.getElementById("belakang").innerHTML = "Masukkan nama belakang";
+        nama belakang.focus(); 
+        return false; 
+    } 
+       
+   /* if (email.value == "")                                   
+    { 
+      document.getElementById("demo").innerHTML = "masukkan email";
+        email.focus(); 
+        return false; 
+    } 
+   
+   if (email.value.indexOf("@", 0) < 0)                 
+    { 
+      document.getElementById("demos").innerHTML = "Not real";
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+      document.getElementById("demoss").innerHTML = "Not real";
+        email.focus(); 
+        return false; 
+    } */
+   
+    if (password.value == "")                           
+    { 
+      document.getElementById("pass").innerHTML = "Masukkan kata sandi";
+        kata sandi.focus(); 
+        return false; 
+    } 
+   
+    if (confirm.value == "")                        
+    { 
+      document.getElementById("firm").innerHTML = "Konfirmasi kata sandi";
+        konfirmasi kata sandi.focus(); 
+        return false; 
+    } 
+   
+   // // if (what.selectedIndex < 1)                  
+   //  { 
+   //      alert("Please enter your course."); 
+   //      what.focus(); 
+   //      return false; 
+   //  } 
+   
+    return true; 
+}</script>
+        
+    </body>
+
+
+<!-- Mirrored from stacksthemes.com/modern/admin1/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2019 08:27:10 GMT -->
+</html>
+
